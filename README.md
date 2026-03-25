@@ -16,10 +16,8 @@ brokai_labs/
 │   │   ├── outreach_writer.cpython-312.pyc
 │   │   └── researcher.cpython-312.pyc
 │   └── researcher.py
-├── Brokai_AI_Engineer_Intern_Assessment (1).pdf
 ├── data
 │   └── Rajasthan Solar leadlist.xlsx
-├── debug_scraped_context.txt
 ├── main.py
 ├── output
 │   ├── BI_output.png

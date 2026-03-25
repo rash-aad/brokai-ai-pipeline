@@ -54,6 +54,10 @@ pip install -r requirements.txt
 streamlit run main.py
 ```
 
+![Brokai Dashboard](overall_output.png)
+
+![Business Intelligence Output](BI_output.png)
+
 # 🧠 Engineering Challenges & Solutions
 Building a robust scraper without relying on expensive, paid APIs (like Google Maps or Apify) presented several real-world engineering challenges. Here is how the pipeline was hardened to overcome them:
 

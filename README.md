@@ -55,12 +55,12 @@ streamlit run main.py
 ```
 
 ## 📱 Dashboard Preview
-![Main Dashboard](output/data/overall_output.png)
+![Main Dashboard](output/overall_output.png)
 
 ### 🔍 Agent Outputs
-![Business Intelligence](output/data/BI_output.png)
-![Contact Card](output/data/contact_card.png)
-![Drafted Message](output/data/drafted_message.png)
+![Business Intelligence](output/BI_output.png)
+![Contact Card](output/contact_card.png)
+![Drafted Message](output/drafted_message.png)
 
 # 🧠 Engineering Challenges & Solutions
 Building a robust scraper without relying on expensive, paid APIs (like Google Maps or Apify) presented several real-world engineering challenges. Here is how the pipeline was hardened to overcome them:

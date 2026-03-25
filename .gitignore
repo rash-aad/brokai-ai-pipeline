@@ -14,3 +14,6 @@ debug_scraped_context.txt
 
 # OS Files
 .DS_Store
+
+# Ignore the raw data folder
+data/*.xlsx

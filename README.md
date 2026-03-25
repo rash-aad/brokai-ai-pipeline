@@ -1,3 +1,5 @@
+Note:create a folder data and upload your excel file with data location and company.
+
 # 🤖 Brokai Labs: Multi-Agent Lead Intelligence Pipeline
 
 This project is a fully automated, multi-agent AI pipeline built for the Brokai Labs take-home assessment. It processes raw lead lists, researches companies, extracts hard-to-find contact information, and generates hyper-personalized outreach messages using the Gemini API.

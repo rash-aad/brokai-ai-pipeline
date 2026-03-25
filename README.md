@@ -18,23 +18,23 @@ brokai_labs/
 ├── .gitignore              # Keeps secrets and virtual environments out of version control
 ├── main.py                 # Streamlit UI & Pipeline Orchestrator
 └── requirements.txt        # Python dependencies
-'''
+```
 
 🚀 How to Run Locally
 1. Clone the repository and navigate to the folder:
 
 ```text git clone [https://github.com/YOUR_USERNAME/brokai-ai-pipeline.git](https://github.com/YOUR_USERNAME/brokai-ai-pipeline.git)
-cd brokai-ai-pipeline
-'''
+cd brokai-ai-pipeline ```
+
 
 2. Create and activate a virtual environment:
 
 ```text python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate'''
+source venv/bin/activate  # On Windows use: venv\Scripts\activate```
 
 3. Install dependencies:
 
-```text pip install -r requirements.txt ''''
+```text pip install -r requirements.txt ```
 
 4. Set up your environment variables:
 
@@ -44,7 +44,7 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate'''
 
 5. Run the Streamlit Dashboard:
 
-```text streamlit run main.py'''
+```text streamlit run main.py```
 
 # 🧠 Engineering Challenges & Solutions
 Building a robust scraper without relying on expensive, paid APIs (like Google Maps or Apify) presented several real-world engineering challenges. Here is how the pipeline was hardened to overcome them:

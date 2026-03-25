@@ -1,0 +1,16 @@
+# Environments
+venv/
+env/
+
+# Secrets
+.env
+
+# Python Caches
+__pycache__/
+*.pyc
+
+# Debug Logs
+debug_scraped_context.txt
+
+# OS Files
+.DS_Store

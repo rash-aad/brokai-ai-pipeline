@@ -18,37 +18,35 @@ brokai_labs/
 ├── .gitignore              # Keeps secrets and virtual environments out of version control
 ├── main.py                 # Streamlit UI & Pipeline Orchestrator
 └── requirements.txt        # Python dependencies
+'''
 
 🚀 How to Run Locally
 1. Clone the repository and navigate to the folder:
 
-Bash
-
-git clone [https://github.com/YOUR_USERNAME/brokai-ai-pipeline.git](https://github.com/YOUR_USERNAME/brokai-ai-pipeline.git)
+```text git clone [https://github.com/YOUR_USERNAME/brokai-ai-pipeline.git](https://github.com/YOUR_USERNAME/brokai-ai-pipeline.git)
 cd brokai-ai-pipeline
+'''
+
 2. Create and activate a virtual environment:
 
-Bash
+```text python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate'''
 
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
 3. Install dependencies:
 
-Bash
+```text pip install -r requirements.txt ''''
 
-pip install -r requirements.txt
 4. Set up your environment variables:
 
-Rename .env.example to .env.
+  Rename .env.example to .env.
 
-Add your Gemini API key: GEMINI_API_KEY=your_key_here
+  Add your Gemini API key: GEMINI_API_KEY=your_key_here
 
 5. Run the Streamlit Dashboard:
 
-Bash
+```text streamlit run main.py'''
 
-streamlit run main.py
-🧠 Engineering Challenges & Solutions
+# 🧠 Engineering Challenges & Solutions
 Building a robust scraper without relying on expensive, paid APIs (like Google Maps or Apify) presented several real-world engineering challenges. Here is how the pipeline was hardened to overcome them:
 
 1. The "Dirty Data" Problem

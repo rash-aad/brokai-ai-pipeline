@@ -6,18 +6,30 @@ This project is a fully automated, multi-agent AI pipeline built for the Brokai 
 
 ```text
 brokai_labs/
-├── agents/
-│   ├── researcher.py       # Agent 01: Scrapes web to build a JSON Business Profile
-│   ├── contact_finder.py   # Agent 02: Hunts for emails/phones & handles graceful fallbacks
-│   └── outreach_writer.py  # Agent 03: Drafts personalized cold outreach based on Agents 1 & 2
-├── data/
-│   └── Rajasthan Solar leadlist.xlsx # Raw input data
-├── utils/
-│   └── search_tools.py     # Custom DDGS search & Regex-powered HTML scraper
-├── .env.example            # Template for API keys
-├── .gitignore              # Keeps secrets and virtual environments out of version control
-├── main.py                 # Streamlit UI & Pipeline Orchestrator
-└── requirements.txt        # Python dependencies
+├── agents
+│   ├── contact_finder.py
+│   ├── outreach_writer.py
+│   ├── __pycache__
+│   │   ├── contact_finder.cpython-312.pyc
+│   │   ├── outreach_writer.cpython-312.pyc
+│   │   └── researcher.cpython-312.pyc
+│   └── researcher.py
+├── Brokai_AI_Engineer_Intern_Assessment (1).pdf
+├── data
+│   └── Rajasthan Solar leadlist.xlsx
+├── debug_scraped_context.txt
+├── main.py
+├── output
+│   ├── BI_output.png
+│   ├── contact_card.png
+│   ├── drafted_message.png
+│   └── overall_output.png
+├── requirements.txt
+├── utils
+│   ├── __pycache__
+│   │   └── search_tools.cpython-312.pyc
+│   └── search_tools.py
+
 ```
 
 🚀 How to Run Locally

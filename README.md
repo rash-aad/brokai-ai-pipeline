@@ -65,7 +65,7 @@ The Solution: Implemented Pandas preprocessing in main.py to map the correct nam
 2. JavaScript Obfuscation & Directory Bot-Protection
 The Issue: Major directories (Justdial, IndiaMART) hide phone numbers behind JavaScript clicks, and registry sites (ZaubaCorp) use Cloudflare to mask emails as [email protected] in the raw HTML. Standard requests libraries couldn't see the data.
 
-The Solution: * Regex Metal Detector: Built a custom regex scanner (\b[6-9]\d{9}\b) in search_tools.py that scans the raw source code before BeautifulSoup cleans the HTML, successfully extracting hidden Indian mobile numbers.
+The Solution: Regex Metal Detector: Built a custom regex scanner (\b[6-9]\d{9}\b) in search_tools.py that scans the raw source code before BeautifulSoup cleans the HTML, successfully extracting hidden Indian mobile numbers.
 
 LLM Guardrails: Added strict anti-hallucination prompts to Agent 02 so it recognizes Cloudflare's [email protected] trap and safely outputs "Not publicly available" rather than hallucinating fake data.
 
@@ -77,6 +77,6 @@ The Solution: Removed Boolean operators from the DDG query. Instead, implemented
 4. API Rate Limits & Graceful Degradation
 The Issue: Running three AI agents back-to-back instantly triggered Google's free-tier 429 RESOURCE_EXHAUSTED rate limits.
 
-The Solution: * Implemented a strict time.sleep(8) pacing mechanism in the orchestrator.
+The Solution: Implemented a strict time.sleep(8) pacing mechanism in the orchestrator.
 
 Built NoneType safety nets between the agents. If Agent 01 or 02 hits a timeout, they return empty dictionaries instead of crashing. Agent 03 is programmed to ingest this empty data, realize the contact info is missing, and gracefully pivot from drafting a WhatsApp message to drafting a LinkedIn DM—keeping the Streamlit UI alive 100% of the time.
